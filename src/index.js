@@ -7,7 +7,16 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <h1>List of Fruits</h1>
+      <ul>
+        <li> mangoes </li>
+        <li> bananas </li>
+        <li> oranges </li>
+      </ul>
+
+    </div>
+    <App/>
   </React.StrictMode>
 );
 
