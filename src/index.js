@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const fName  = 'Jeremiah';
+const lName = 'Idahosa';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
+      <p> my name is {fName + ' ' + lName }</p>
       <h1>List of Fruits</h1>
       <ul>
         <li> mangoes </li>
