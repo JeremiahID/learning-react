@@ -4,24 +4,38 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const fName  = 'Jeremiah';
-const lName = 'Idahosa';
 
+
+const todayDate = new Date();
+const currentHour  = todayDate.getHours();
+console.log(currentHour);
+
+var welcome;
+
+const customStyle  =  {
+  color: ""
+}
+
+if(currentHour < 12){
+  welcome = "Good Morning";
+  customStyle.color = "red";
+} else if (currentHour < 18){
+  welcome = "Good Afternoon";
+  customStyle.color = "green";
+} else {
+  welcome = "Good Evening"
+  customStyle.color = "blue";
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
-      <p> my name is {fName + ' ' + lName }</p>
-      <h1>List of Fruits</h1>
-      <ul>
-        <li> mangoes </li>
-        <li> bananas </li>
-        <li> oranges </li>
-      </ul>
+      <h1 style = {customStyle}>{welcome}</h1>
 
     </div>
-    <App/>
+    {/* <App/> */}
+    
   </React.StrictMode>
 );
 
