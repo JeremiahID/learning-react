@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Heading from './heading';
+import List from './list';
+
 
 
 
@@ -31,6 +34,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
+      <Heading />
+      <List />
       <h1 style = {customStyle}>{welcome}</h1>
 
     </div>
