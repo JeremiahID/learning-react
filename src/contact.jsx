@@ -3,7 +3,7 @@ import React from "react";
 
 function Card(props){
     return (
-        <div>
+        <div className="card">
             <h2>{props.name}</h2>
             <img 
                 src={props.img} 
