@@ -1,5 +1,6 @@
 import React from "react";
 import Images from "./img";
+import Parag from "./paragraphs";
 
 
 function Card(props){
@@ -7,8 +8,7 @@ function Card(props){
         <div className="card">
             <h2>{props.name}</h2>
             <Images img = {props.img}/>
-            <p>{props.tel}</p>
-            <p>{props.email}</p>
+            <Parag tel = {props.tel} email = {props.email}/>
         </div>
     )
 };

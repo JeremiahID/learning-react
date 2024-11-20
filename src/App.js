@@ -1,9 +1,7 @@
 import React from 'react';
-import Heading from './heading';
-import List from './list';
-import TimeCheck from './time';
 import Card from './contact';
 import { celebrityImages } from './img';
+
 
 
 
@@ -16,22 +14,22 @@ function App() {
       <Card 
         name = {celebrityImages[0].name}
         img = {celebrityImages[0].imgUrl}
-        tel = "+12345"
-        email = 'b@mail.com'
+        tel = {celebrityImages[0].tel}
+        email = {celebrityImages[0].email}
       />
       {/* bauer card */}
       <Card 
         name = {celebrityImages[1].name}
         img = {celebrityImages[1].imgUrl}
-        tel = "+56345"
-        email = 'jackb@mail.com'
+        tel = {celebrityImages[1].tel}
+        email = {celebrityImages[1].email}
       />
       {/* wixkid card */}
       <Card 
         name = {celebrityImages[2].name}
         img = {celebrityImages[2].imgUrl}
-        tel = "+345"
-        email = 'wiz-kid@gmail.com'
+        tel = {celebrityImages[2].tel}
+        email = {celebrityImages[2].email}
       />
     </div>
   );
