@@ -5,7 +5,6 @@ import { celebrityImages } from './img';
 
 
 
-
 function App() {
   return (
     <div>
